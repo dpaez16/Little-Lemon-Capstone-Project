@@ -2,7 +2,7 @@ import BruschettaImg from '../../../../assets/bruschetta.jpg';
 import GreekSaladImg from '../../../../assets/greek_salad.jpg';
 import PennePastaImg from '../../../../assets/penne_pasta.jpg';
 import SpecialCard from '../../../ui/specialCard/SpecialCard';
-import { HStack, Heading } from '@chakra-ui/react';
+import { HStack, Heading, Divider } from '@chakra-ui/react';
 import './FeaturedSpecials.css';
 
 const SPECIALS = [
@@ -35,6 +35,7 @@ export default function FeaturedSpecials() {
                     return <SpecialCard key={idx} {...elem} />
                 })}
             </HStack>
+            <Divider borderColor='black' />
         </section>
     );
 };
