@@ -1,5 +1,6 @@
 import ServingFoodImg from '../../../../assets/serving_food.jpg';
 import { Button, Heading, Text, Image, Stack } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import './RestaurantIntroduction.css';
 
 export default function RestaurantIntroduction() {
@@ -13,7 +14,7 @@ export default function RestaurantIntroduction() {
                     focused on traditional recipes served with a modern twist.
                 </Text>
                 <Button maxW='fit-content'>
-                    Reserve a Table
+                    <Link to='/reservations'>Reserve a Table</Link>
                 </Button>
             </Stack>
             <Image  src={ServingFoodImg}
