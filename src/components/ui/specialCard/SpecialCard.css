@@ -3,5 +3,5 @@
 }
 
 .SpecialCard {
-    box-shadow: 5px 10px 20px #ccc;
+    box-shadow: 5px 10px 20px #ccc !important;
 }

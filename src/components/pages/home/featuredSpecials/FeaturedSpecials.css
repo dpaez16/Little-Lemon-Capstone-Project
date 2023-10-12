@@ -3,12 +3,16 @@
     padding: 25px;
 }
 
+.FeaturedSpecials_Container {
+    padding-bottom: 50px !important;
+}
+
 .FeaturedSpecials > h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .FeaturedSpecials_Container {
         flex-direction: column !important;
     }
