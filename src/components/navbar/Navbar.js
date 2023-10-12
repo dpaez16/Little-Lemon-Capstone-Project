@@ -5,20 +5,24 @@ import './Navbar.css';
 
 export default function Navbar() {
     const links = [
-        <Link to='/'>Home</Link>,
-        <Link to='/'>About</Link>,
-        <Link to='/'>Menu</Link>,
-        <Link to='/reservations'>Reservations</Link>,
-        <Link to='/'>Order Online</Link>,
+        { to: '/', text: "Home" },
+        { to: '/', text: "About" },
+        { to: '/', text: "Menu" },
+        { to: '/reservations', text: "Reservations" },
+        { to: '/', text: "Order Online" },
     ];
 
     return (
         <nav className='Navbar'>
             <img src={LittleLemonLogo} alt='Little Lemon Logo' />
-            {links}
-            <HamburgerMenu>
-                {links}
-            </HamburgerMenu>
+            {
+                links.map((link, idx) => {
+                    return (
+                        <Link to={link.to} key={idx}>{link.text}</Link>
+                    );
+                })
+            }
+            <HamburgerMenu links={links} />
         </nav>
     );
 };

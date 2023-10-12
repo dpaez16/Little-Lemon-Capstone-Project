@@ -6,11 +6,11 @@ import {
     IconButton,
   } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { Children, cloneElement } from 'react';
+import { Link } from 'react-router-dom';
 import './HamburgerMenu.css';
 
 export default function HamburgerMenu(props) {
-    const { children } = props;
+    const { links } = props;
     return (
         <nav className='HamburgerMenu'>
         <Menu>
@@ -22,10 +22,10 @@ export default function HamburgerMenu(props) {
             />
             <MenuList>
                 {
-                    Children.map(children, (child, idx) => {
+                    links.map((link, idx) => {
                         return (
-                            <MenuItem>
-                                {cloneElement(child, { key: idx })}
+                            <MenuItem key={idx}>
+                                <Link to={link.to}>{link.text}</Link>
                             </MenuItem>
                         );
                     })
