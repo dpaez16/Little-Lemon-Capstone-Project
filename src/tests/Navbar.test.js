@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouterWrapper } from './testHelper';
+import { BrowserRouterWrapper } from './testHelpers';
 import Navbar from '../components/navbar/Navbar';
 
 test('Navbar renders all links', () => {

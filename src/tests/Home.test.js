@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouterWrapper } from './testHelper';
+import { BrowserRouterWrapper } from './testHelpers';
 import Home from '../components/pages/home/Home';
 
 test('Home page renders restaurant intro', () => {

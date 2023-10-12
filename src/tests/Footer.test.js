@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouterWrapper } from './testHelper';
+import { BrowserRouterWrapper } from './testHelpers';
 import Footer from '../components/footer/Footer';
 
 test('Footer renders all links', () => {
