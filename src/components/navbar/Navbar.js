@@ -9,7 +9,7 @@ export default function Navbar() {
             <Link to='/'>Home</Link>
             <Link to='/'>About</Link>
             <Link to='/'>Menu</Link>
-            <Link to='/'>Reservations</Link>
+            <Link to='/reservations'>Reservations</Link>
             <Link to='/'>Order Online</Link>
         </nav>
     );

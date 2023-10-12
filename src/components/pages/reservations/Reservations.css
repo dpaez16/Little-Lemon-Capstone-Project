@@ -1,0 +1,14 @@
+.ReservationsPage {
+    background-color: #495E57;
+    width: 100%;
+    padding-left: 25% !important;
+    padding-right: 25% !important;
+}
+
+.ReservationsPage input {
+    background-color: #E8F0FE !important;
+}
+
+.ReservationsPage_SubmitButton {
+    color: black !important;
+}
