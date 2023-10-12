@@ -6,6 +6,8 @@ import {
     IconButton,
   } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { Children, cloneElement } from 'react';
+import './HamburgerMenu.css';
 
 export default function HamburgerMenu(props) {
     const { children } = props;
@@ -19,9 +21,15 @@ export default function HamburgerMenu(props) {
                 variant='outline'
             />
             <MenuList>
-                <MenuItem>
-                    New Tab
-                </MenuItem>
+                {
+                    Children.map(children, (child, idx) => {
+                        return (
+                            <MenuItem>
+                                {cloneElement(child, { key: idx })}
+                            </MenuItem>
+                        );
+                    })
+                }
             </MenuList>
         </Menu>
         </nav>
