@@ -26,7 +26,7 @@ export default function Reservations() {
             firstName: "",
             lastName: "",
             email: "",
-            numberOfGuests: "1",
+            numberOfGuests: "",
             reservationDate: "",
             reservationTime: ""
         },
@@ -38,7 +38,7 @@ export default function Reservations() {
             firstName: Yup.string().required('Required'),
             lastName: Yup.string().required('Required'),
             email: Yup.string().email("Invalid email address").required('Required'),
-            numberOfGuests: Yup.number(),
+            numberOfGuests: Yup.number().required('Required'),
             reservationDate: Yup.date().required('Required'),
             reservationTime: Yup.string().required('Required')
         }),
@@ -57,8 +57,8 @@ export default function Reservations() {
 
     return (
         <>
-            <VStack 
-                p={32} 
+            <VStack
+                p={32}
                 alignItems="flex-start"
                 className='ReservationsPage'
             >
