@@ -30,7 +30,7 @@ export default function FeaturedSpecials() {
     return (
         <section className='FeaturedSpecials'>
             <Heading as='h2'>Specials</Heading>
-            <HStack justifyContent='space-around'>
+            <HStack justifyContent='space-around' className='FeaturedSpecials_Container'>
                 {SPECIALS.map((elem, idx) => {
                     return <SpecialCard key={idx} {...elem} />
                 })}

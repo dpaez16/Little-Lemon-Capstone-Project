@@ -7,3 +7,9 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
+@media (max-width: 1023px) {
+    .FeaturedSpecials_Container {
+        flex-direction: column !important;
+    }
+}

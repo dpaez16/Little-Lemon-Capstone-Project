@@ -15,3 +15,9 @@
 .RestaurantIntroduction div > p {
     color: #EDEFEE;
 }
+
+@media (max-width: 1024px) {
+    .RestaurantIntroduction > img {
+        display: none;
+    }
+}

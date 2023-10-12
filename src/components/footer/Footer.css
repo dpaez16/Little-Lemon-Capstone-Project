@@ -12,3 +12,13 @@ footer > img {
     object-fit: cover;
     overflow: hidden;
 }
+
+@media (max-width: 1023px) {
+    footer > img {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
