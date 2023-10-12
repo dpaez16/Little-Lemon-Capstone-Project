@@ -1,0 +1,9 @@
+.FeaturedSpecials {
+    width: 100%;
+    padding: 25px;
+}
+
+.FeaturedSpecials > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}

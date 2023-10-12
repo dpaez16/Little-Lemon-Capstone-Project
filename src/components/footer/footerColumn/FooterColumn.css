@@ -1,0 +1,10 @@
+.FooterColumn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+
+.FooterColumn > h2 {
+    margin-bottom: 20px;
+}

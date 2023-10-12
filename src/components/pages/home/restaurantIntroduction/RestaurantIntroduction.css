@@ -1,0 +1,16 @@
+.RestaurantIntroduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #495E57;
+    padding: 1%;
+}
+
+.RestaurantIntroduction div > * {
+    margin: 10px 0 10px 0;
+}
+
+.RestaurantIntroduction div > p {
+    color: #EDEFEE;
+}
