@@ -22,4 +22,7 @@ test('Footer renders all links', () => {
     const textElem = screen.getByText(elem);
     expect(textElem).toBeInTheDocument();
   });
+
+  const imageElem = screen.getByAltText(/Little Lemon Logo/i);
+  expect(imageElem).toBeInTheDocument();
 });
