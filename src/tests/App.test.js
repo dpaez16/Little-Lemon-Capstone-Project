@@ -1,18 +1,14 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from '../App';
 
-test('Home page renders by default', () => {
+test('Can navigate to reservations page', () => {
   render(<App />);
 
-  const keywords = [
-    "Social Media",
-    "Facebook",
-    "Instagram",
-    "LinkedIn",
-  ];
+  const reserveTableButton = screen.getByText(/^Reserve a Table$/i);
+  expect(reserveTableButton).toBeInTheDocument();
 
-  keywords.forEach(elem => {
-    const textElem = screen.getByText(elem);
-    expect(textElem).toBeInTheDocument();
-  });
+  fireEvent.click(reserveTableButton);
+
+  const bookAReservationHeader = screen.getByText("Book a Reservation");
+  expect(bookAReservationHeader).toBeInTheDocument();
 });
