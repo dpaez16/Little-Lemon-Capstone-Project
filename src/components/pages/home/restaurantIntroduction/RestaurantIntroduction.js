@@ -18,8 +18,9 @@ export default function RestaurantIntroduction() {
             </Stack>
             <Image  src={ServingFoodImg}
                     alt='Serving food'
-                    objectFit='cover'
-                    height='2xl'
+                    height="100%"
+                    objectFit="cover"
+                    overflow="hidden"
             />
         </section>
     );

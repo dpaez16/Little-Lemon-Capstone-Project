@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #495E57;
     padding: 1%;
+    height: 50%;
 }
 
 .RestaurantIntroduction div > * {
